@@ -1,0 +1,13 @@
+C:\Users\User\Desktop\C++\3d shit\Mikset\Core\common.cpp;C:\Users\User\Desktop\C++\3d shit\Mikset\Mikset\x64\Debug\common.obj
+C:\Users\User\Desktop\C++\3d shit\Mikset\Game\Scene\entity.cpp;C:\Users\User\Desktop\C++\3d shit\Mikset\Mikset\x64\Debug\entity.obj
+C:\Users\User\Desktop\C++\3d shit\Mikset\Renderer\Camera\camera.cpp;C:\Users\User\Desktop\C++\3d shit\Mikset\Mikset\x64\Debug\camera.obj
+C:\Users\User\Desktop\C++\3d shit\Mikset\Renderer\Graphics\shaders.cpp;C:\Users\User\Desktop\C++\3d shit\Mikset\Mikset\x64\Debug\shaders.obj
+C:\Users\User\Desktop\C++\3d shit\Mikset\Resources\ModelHandle.cpp;C:\Users\User\Desktop\C++\3d shit\Mikset\Mikset\x64\Debug\ModelHandle.obj
+C:\Users\User\Desktop\C++\3d shit\Mikset\Core\core.cpp;C:\Users\User\Desktop\C++\3d shit\Mikset\Mikset\x64\Debug\core.obj
+C:\Users\User\Desktop\C++\3d shit\Mikset\Game\game.cpp;C:\Users\User\Desktop\C++\3d shit\Mikset\Mikset\x64\Debug\game.obj
+C:\Users\User\Desktop\C++\3d shit\Mikset\main.cpp;C:\Users\User\Desktop\C++\3d shit\Mikset\Mikset\x64\Debug\main.obj
+C:\Users\User\Desktop\C++\3d shit\Mikset\Resources\TextureHandle.cpp;C:\Users\User\Desktop\C++\3d shit\Mikset\Mikset\x64\Debug\TextureHandle.obj
+C:\Users\User\Desktop\C++\3d shit\Mikset\Renderer\Graphics\Scene\scene.cpp;C:\Users\User\Desktop\C++\3d shit\Mikset\Mikset\x64\Debug\scene.obj
+C:\Users\User\Desktop\C++\3d shit\Mikset\UI\imgui_impl_dx11.cpp;C:\Users\User\Desktop\C++\3d shit\Mikset\Mikset\x64\Debug\imgui_impl_dx11.obj
+C:\Users\User\Desktop\C++\3d shit\Mikset\UI\imgui_impl_sdl2.cpp;C:\Users\User\Desktop\C++\3d shit\Mikset\Mikset\x64\Debug\imgui_impl_sdl2.obj
+C:\Users\User\Desktop\C++\3d shit\Mikset\UI\interface.cpp;C:\Users\User\Desktop\C++\3d shit\Mikset\Mikset\x64\Debug\interface.obj

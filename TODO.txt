@@ -1,0 +1,205 @@
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+--- means unimplemented
+if you see a header without --- behind it it means it has been implemented
+
+^^^^ means (WIP)
+
+(**) is to be used with ideas
+
+### is for updates on the ongoing feature
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+TODO: Essential
+
+archeticture: 
+	make an entity class	 // prob needs a lil more work but done (for now)
+---	make a PointLight class in Emitter/
+---	make a SpotLight class in Emitter/
+---	make a DirectionalLight class in Emitter/
+
+---	make a better entity adding system to the scene, something actually with components
+	i mean everything is there i just need to wire it. 
+
+
+
+features: 
+---	scene saving feature:
+	(**) Approach in Mind: 
+	 --	.mkscene file that literally has direct code from the Game::Init() function
+		we loop over them and basically add them WITH their additional info such as their transformations
+		and materials and whatnot
+
+		update: parsing and logging entities has been implemented but outside the engine, 
+		really now whats left is wiring it with the engine
+
+
+	animations and bones	// THANK THE LORD ITS DONE (for now needs blending and shit)
+	animation time stamps	// done 
+--- animation blending
+--- ability for Entities to have their own shader
+
+	integrate GUI		 		// done
+--- integrating scene with GUI: // WIP
+		adding models, skyboxes, players from a GUI context instead of code (will need a scene-save feature ".mikscene")
+
+--- gizmos for moving entities/objects around, its nice to have, looks good and shouldnt be that hard to do 
+	for now i have imgui gizmos in mind
+				
+
+---- Networking and Multiplayer: // oh god talk about rewriting the whole physics engine and multi-threading... god no		
+							     // now thinking about it this is more of a game-thing not a an engine thing i mean sure almost every engine has it
+								 // but then again i think id only make a networking engine WHILE making a game not right now so
+
+
+
+gameplay:
+    
+	Relate time (delta time) 					      // done 
+	Cap physics engine at a fixed frame rate	 	  // done (i didnt see much benifit from doing so btw)
+
+	collisions:  		 		 				 	  // done (needs work)
+		Collider struct  							  // done
+		Collision Handler (AABB and capsule OBB)	  // done (needs work)
+		Capsule - Triangle Collisions (BVH or Octree) // done, the BVH part is mostly done, 
+		// it is lacking in terms of correctly scaling with models, best example is sponza where the BVH is much 
+		// smaller to what the model presents. loading sponza in its original scale (1) the mesh is way too huge for
+		// the camera to capture correctly, scaling it down to a reasonable size (0.0005) makes the BVH almost nonexistant
+		
+------- Handle UnUniformed scaling with (TriMesh/AABB).
+
+------- Capsule Collider for Entities							
+-------	Capsile vs Capsule Collisions
+
+
+------- Make Collisions work with Animations: (re-fitting)
+			NOTE: generally using triangle mesh on animated models isnt the most ideal thing
+			i mean for characters you can probably get away with a simple AABB box around them
+			for bosses say like elden ring/dark souls you'd use capsule colliders on stuff like the feet and head
+			you can already guess capsule colliders are still not implemented.
+
+			the bvh correctly handles scaling and translations. however the same can NOT
+			be said about animations.
+			re-fitting the BVH is the best solution i found.
+			
+
+    
+		Debug to see the collisions (TriMesh/AABB) // done 
+		
+		Player struct							  // done
+    
+------- Collision Editor 			
+			.mikcol files for collision data
+    
+	
+	physics engine: // done (still needs more work)
+		its very rough, we do have a source engine style air friction and 
+		slope handling but its very inconsistent. usually collidables break after the speed of 30
+		there is still some noticable jittering on some models its very subtle but for some the jittering 
+		is very apparent. 
+
+        in the future id consider adding rigid bodies or ragdolls.. now thinking about it..
+		geez that would be a pain in the ass
+
+        (**) IDEAS: 
+         -- maybe use physX ? or Jolt..
+            now Jolt is lighter so prob go with Jolt
+            IF we want rigid bodies or maybe a better collision
+            handling system.
+			it will save me the headache of making my own physics engine
+
+		
+
+graphics:
+	PBR																  // needs more work but its done
+	loading metalic, roughness, specular maps and integrating with UI // done
+	SkyBox and integrate with PBR									  // done
+
+		Shadows: 													  // done needs work 
+			Needs PCF sampling // added IGN rotation.. done 
+		    Needs to handle animations // done
+			Models such as sponza seem to not work for yet to be addressed reasons // fixed (issue was it wasnt handling worldpos correctly)
+				
+-------	Ambient occlusion (baked or screen-space)
+-------	Post processing effects
+-------	compute shaders   
+-------	global illumination (i feel id go with a more source engine indirect light approach for performance)
+-------	HDR // kinda done.. needs a shit load more work tho.. wont even consider it finalized 
+            // also not like i have an HDR monitor to really confirm lmao
+
+
+nice_to_have: 
+--- Better UI:
+        id prefer a system that utilizes HTML/CSS
+        something lightweight and easy to integrate, for now i have Sciter in mind
+
+	optimizations: 
+------- frustum culling
+-------	batching meshes
+------- level of detail (LOD)
+------- deffered rendering 
+
+
+
+logs: // ik kinda late to the party but hey shut up
+
+	###	update 19-4-26: added entity adding with colliders (right now only real option is Triangle mesh you cant 
+		exactly add AABB values but will def work on it), not players tho and no .mikscene but im sure it wouldnt be 
+		that complicated
+	
+	### update 25-5-26: 
+		added shadows albeit not good ones
+		updated UI and added a XYZVec3Control() function see definition for more info
+		fixed an issue with the entity insertion where adding colliders seemed to be bugged
+		depth issues preventing clear view of the debug visualization after adding shadows GIVE ME A BREAK FOR GOD's SAKE DUDE
+
+
+	### update 06-6-26: 
+		added scripting to entities using lambda functions
+		not perfect by any means but pretty sure could be put to 
+		good use.
+
+		eg.: 
+		[&](Entity* e, float dt) {
+			float diff = 0.0f;
+			diff += this->deltaTime; 
+			if (diff > 2 * 3.14) diff = 0.0f; 
+
+			float radius = 10.0f;
+			e->transf.position.x = sin(diff) * radius;
+			e->transf.position.z = cos(diff) * radius;
+		}; 
+
+	
+	### update 08-6-26:
+		made the shadows work with animations.
+	
+	### update 14-6-26: 
+		optimized the debug viewer
+		fixed missing vertex and BVH visualizations due to a hard limit on the ammount the debug viewer can show
+		
+		TODO: 
+			BVH's dont scale correctly with some models such as sponza. // done? i guess
+
+	### update 05-7-26: 
+		wow it really tool me nearly a month to fix it..
+		so the plain issue is units. sponza fucking sucks at that
+		now the fix is to multiply the final transform that is used in Submit() by the rootNodeTransformation, this fixes sponza
+		but breaks almost every other model in the process. so when creating a model you might need to be a bit more specific
+		use entity->MulByRootNodeTransf = true; to apply the fix that was discussed.
+	
+		i also added a BakeModelTransformations flag in Entity and Model creation. this simply puts the aiProcess_PreTransformVertices
+		that removes any hierarchys and makes the model into 1 mesh, issue is that it breaks skinned/animated models
+	
+	### update 06-7-26: 
+		added IGN rotation for shadows (Interleaved Gradient Noise rotation) and yes i did use AI 
+		but it looks good for now, does fall short a little on thin stuff but it works and looks exceptionally 
+		okay.
+
+		
+		
+			
+		
+		
+

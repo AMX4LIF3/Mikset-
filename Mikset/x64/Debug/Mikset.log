@@ -1,0 +1,121 @@
+﻿  core.cpp
+C:\Users\User\Desktop\C++\3d shit\Mikset\Core\core.cpp(30,34): warning C4244: '=': conversion from 'float' to 'UINT', possible loss of data
+C:\Users\User\Desktop\C++\3d shit\Mikset\Core\core.cpp(31,35): warning C4244: '=': conversion from 'float' to 'UINT', possible loss of data
+  entity.cpp
+C:\Users\User\Desktop\C++\3d shit\Mikset\Core\common.hpp(11,16): warning C4091: 'typedef ': ignored on left of 'vertex' when no variable is declared
+  (compiling source file 'Game/Scene/entity.cpp')
+  
+C:\Users\User\Desktop\C++\3d shit\Mikset\Resources\TextureHandle.hpp(8,16): warning C4091: 'typedef ': ignored on left of 'Texture' when no variable is declared
+  (compiling source file 'Game/Scene/entity.cpp')
+  
+C:\Users\User\Desktop\C++\3d shit\Mikset\Game\Scene\entity.hpp(12,16): warning C4091: 'typedef ': ignored on left of 'Transform' when no variable is declared
+  (compiling source file 'Game/Scene/entity.cpp')
+  
+C:\Users\User\Desktop\C++\3d shit\Mikset\Game\Scene\entity.hpp(18,28): warning C4091: 'typedef ': ignored on left of 'MaterialBuffer' when no variable is declared
+  (compiling source file 'Game/Scene/entity.cpp')
+  
+  game.cpp
+C:\Users\User\Desktop\C++\3d shit\Mikset\Core\common.hpp(11,16): warning C4091: 'typedef ': ignored on left of 'vertex' when no variable is declared
+  (compiling source file 'Game/game.cpp')
+  
+C:\Users\User\Desktop\C++\3d shit\Mikset\Resources\TextureHandle.hpp(8,16): warning C4091: 'typedef ': ignored on left of 'Texture' when no variable is declared
+  (compiling source file 'Game/game.cpp')
+  
+C:\Users\User\Desktop\C++\3d shit\Mikset\Renderer\Graphics\Buffers\buffers.hpp(7,28): warning C4091: 'typedef ': ignored on left of 'GlobalBuffer' when no variable is declared
+  (compiling source file 'Game/game.cpp')
+  
+C:\Users\User\Desktop\C++\3d shit\Mikset\Renderer\Graphics\Buffers\buffers.hpp(14,28): warning C4091: 'typedef ': ignored on left of 'ObjectBuffer' when no variable is declared
+  (compiling source file 'Game/game.cpp')
+  
+C:\Users\User\Desktop\C++\3d shit\Mikset\Game\Scene\entity.hpp(12,16): warning C4091: 'typedef ': ignored on left of 'Transform' when no variable is declared
+  (compiling source file 'Game/game.cpp')
+  
+C:\Users\User\Desktop\C++\3d shit\Mikset\Game\Scene\entity.hpp(18,28): warning C4091: 'typedef ': ignored on left of 'MaterialBuffer' when no variable is declared
+  (compiling source file 'Game/game.cpp')
+  
+C:\Users\User\Desktop\C++\3d shit\Mikset\UI\interface.hpp(10,16): warning C4091: 'typedef ': ignored on left of 'InterfaceCtx' when no variable is declared
+  (compiling source file 'Game/game.cpp')
+  
+  camera.cpp
+C:\Users\User\Desktop\C++\3d shit\Mikset\Core\common.hpp(11,16): warning C4091: 'typedef ': ignored on left of 'vertex' when no variable is declared
+  (compiling source file 'Renderer/Camera/camera.cpp')
+  
+  scene.cpp
+C:\Users\User\Desktop\C++\3d shit\Mikset\Renderer\Graphics\Buffers\buffers.hpp(7,28): warning C4091: 'typedef ': ignored on left of 'GlobalBuffer' when no variable is declared
+  (compiling source file 'Renderer/Graphics/Scene/scene.cpp')
+  
+C:\Users\User\Desktop\C++\3d shit\Mikset\Renderer\Graphics\Buffers\buffers.hpp(14,28): warning C4091: 'typedef ': ignored on left of 'ObjectBuffer' when no variable is declared
+  (compiling source file 'Renderer/Graphics/Scene/scene.cpp')
+  
+C:\Users\User\Desktop\C++\3d shit\Mikset\Core\common.hpp(11,16): warning C4091: 'typedef ': ignored on left of 'vertex' when no variable is declared
+  (compiling source file 'Renderer/Graphics/Scene/scene.cpp')
+  
+C:\Users\User\Desktop\C++\3d shit\Mikset\Resources\TextureHandle.hpp(8,16): warning C4091: 'typedef ': ignored on left of 'Texture' when no variable is declared
+  (compiling source file 'Renderer/Graphics/Scene/scene.cpp')
+  
+C:\Users\User\Desktop\C++\3d shit\Mikset\Game\Scene\entity.hpp(12,16): warning C4091: 'typedef ': ignored on left of 'Transform' when no variable is declared
+  (compiling source file 'Renderer/Graphics/Scene/scene.cpp')
+  
+C:\Users\User\Desktop\C++\3d shit\Mikset\Game\Scene\entity.hpp(18,28): warning C4091: 'typedef ': ignored on left of 'MaterialBuffer' when no variable is declared
+  (compiling source file 'Renderer/Graphics/Scene/scene.cpp')
+  
+  shaders.cpp
+C:\Users\User\Desktop\C++\3d shit\Mikset\Core\common.hpp(11,16): warning C4091: 'typedef ': ignored on left of 'vertex' when no variable is declared
+  (compiling source file 'Renderer/Graphics/shaders.cpp')
+  
+  ModelHandle.cpp
+C:\Users\User\Desktop\C++\3d shit\Mikset\Core\common.hpp(11,16): warning C4091: 'typedef ': ignored on left of 'vertex' when no variable is declared
+  (compiling source file 'Resources/ModelHandle.cpp')
+  
+C:\Users\User\Desktop\C++\3d shit\Mikset\Resources\TextureHandle.hpp(8,16): warning C4091: 'typedef ': ignored on left of 'Texture' when no variable is declared
+  (compiling source file 'Resources/ModelHandle.cpp')
+  
+  interface.cpp
+C:\Users\User\Desktop\C++\3d shit\Mikset\Renderer\Graphics\Buffers\buffers.hpp(7,28): warning C4091: 'typedef ': ignored on left of 'GlobalBuffer' when no variable is declared
+  (compiling source file 'UI/interface.cpp')
+  
+C:\Users\User\Desktop\C++\3d shit\Mikset\Renderer\Graphics\Buffers\buffers.hpp(14,28): warning C4091: 'typedef ': ignored on left of 'ObjectBuffer' when no variable is declared
+  (compiling source file 'UI/interface.cpp')
+  
+C:\Users\User\Desktop\C++\3d shit\Mikset\Core\common.hpp(11,16): warning C4091: 'typedef ': ignored on left of 'vertex' when no variable is declared
+  (compiling source file 'UI/interface.cpp')
+  
+C:\Users\User\Desktop\C++\3d shit\Mikset\Resources\TextureHandle.hpp(8,16): warning C4091: 'typedef ': ignored on left of 'Texture' when no variable is declared
+  (compiling source file 'UI/interface.cpp')
+  
+C:\Users\User\Desktop\C++\3d shit\Mikset\Game\Scene\entity.hpp(12,16): warning C4091: 'typedef ': ignored on left of 'Transform' when no variable is declared
+  (compiling source file 'UI/interface.cpp')
+  
+C:\Users\User\Desktop\C++\3d shit\Mikset\Game\Scene\entity.hpp(18,28): warning C4091: 'typedef ': ignored on left of 'MaterialBuffer' when no variable is declared
+  (compiling source file 'UI/interface.cpp')
+  
+C:\Users\User\Desktop\C++\3d shit\Mikset\UI\interface.hpp(10,16): warning C4091: 'typedef ': ignored on left of 'InterfaceCtx' when no variable is declared
+  (compiling source file 'UI/interface.cpp')
+  
+  main.cpp
+C:\Users\User\Desktop\C++\3d shit\Mikset\Core\common.hpp(11,16): warning C4091: 'typedef ': ignored on left of 'vertex' when no variable is declared
+  (compiling source file 'main.cpp')
+  
+C:\Users\User\Desktop\C++\3d shit\Mikset\Resources\TextureHandle.hpp(8,16): warning C4091: 'typedef ': ignored on left of 'Texture' when no variable is declared
+  (compiling source file 'main.cpp')
+  
+C:\Users\User\Desktop\C++\3d shit\Mikset\Renderer\Graphics\Buffers\buffers.hpp(7,28): warning C4091: 'typedef ': ignored on left of 'GlobalBuffer' when no variable is declared
+  (compiling source file 'main.cpp')
+  
+C:\Users\User\Desktop\C++\3d shit\Mikset\Renderer\Graphics\Buffers\buffers.hpp(14,28): warning C4091: 'typedef ': ignored on left of 'ObjectBuffer' when no variable is declared
+  (compiling source file 'main.cpp')
+  
+C:\Users\User\Desktop\C++\3d shit\Mikset\Game\Scene\entity.hpp(12,16): warning C4091: 'typedef ': ignored on left of 'Transform' when no variable is declared
+  (compiling source file 'main.cpp')
+  
+C:\Users\User\Desktop\C++\3d shit\Mikset\Game\Scene\entity.hpp(18,28): warning C4091: 'typedef ': ignored on left of 'MaterialBuffer' when no variable is declared
+  (compiling source file 'main.cpp')
+  
+C:\Users\User\Desktop\C++\3d shit\Mikset\UI\interface.hpp(10,16): warning C4091: 'typedef ': ignored on left of 'InterfaceCtx' when no variable is declared
+  (compiling source file 'main.cpp')
+  
+  Generating Code...
+C:\Users\User\Desktop\C++\3d shit\Mikset\Resources\ModelHandle.cpp(348,1): warning C4715: 'Model::GetVertexData': not all control paths return a value
+  Mikset.vcxproj -> C:\Users\User\Desktop\C++\3d shit\Mikset\x64\Debug\Mikset.exe
+  'pwsh.exe' is not recognized as an internal or external command,
+  operable program or batch file.

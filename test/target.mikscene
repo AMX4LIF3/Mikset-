@@ -1,0 +1,32 @@
+0x67
+ID : hey
+TranslationX : 58
+TranslationY : 60
+TranslationZ : 100
+RotationX : 1.57
+RotationY : 0
+RotationZ : 0
+ScaleX : 1
+ScaleY : 1
+ScaleZ : 1
+Roughness : 0.5
+Metallic : 0
+AO : 1
+Push : TriangleMesh
+0x69
+0x67
+ID : wall
+TranslationX : 518
+TranslationY : 60
+TranslationZ : 100
+RotationX : 1.57
+RotationY : 1
+RotationZ : 0
+ScaleX : 1
+ScaleY : 1
+ScaleZ : 1
+Roughness : 0.5
+Metallic : 1
+AO : 1
+Push : TriangleMesh
+0x69

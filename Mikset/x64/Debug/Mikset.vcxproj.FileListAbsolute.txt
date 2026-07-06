@@ -1,0 +1,9 @@
+C:\Users\User\Desktop\C++\3d shit\Mikset\x64\Debug\assimp-vc143-mtd.dll
+C:\Users\User\Desktop\C++\3d shit\Mikset\x64\Debug\poly2tri.dll
+C:\Users\User\Desktop\C++\3d shit\Mikset\x64\Debug\minizip.dll
+C:\Users\User\Desktop\C++\3d shit\Mikset\x64\Debug\zlibd1.dll
+C:\Users\User\Desktop\C++\3d shit\Mikset\x64\Debug\kubazip.dll
+C:\Users\User\Desktop\C++\3d shit\Mikset\x64\Debug\pugixml.dll
+C:\Users\User\Desktop\C++\3d shit\Mikset\x64\Debug\DirectXTex.dll
+C:\Users\User\Desktop\C++\3d shit\Mikset\x64\Debug\SDL2d.dll
+C:\Users\User\Desktop\C++\3d shit\Mikset\Mikset\x64\Debug\Mikset.vcxproj.Up2Date

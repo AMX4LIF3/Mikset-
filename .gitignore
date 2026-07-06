@@ -1,0 +1,6 @@
+.vs/
+[Db]ebug/
+[Rr]elease/
+*.user
+*.suo
+*.vshost.*
